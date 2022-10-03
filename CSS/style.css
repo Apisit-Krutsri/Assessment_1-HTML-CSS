@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: lightgray;
+}
+
+nav {
+    display: flex;
+    height: 64px;
+    max-height: 64px;
+    background-color: white;
+}
+
+nav > .main-menu {
+    list-style-type: none;
+    margin-left: -16px;
+}
+
+nav > .main-menu > li {}
+
+nav > .logo-img {
+    margin-left: 24px;
+}
