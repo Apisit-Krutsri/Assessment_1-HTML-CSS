@@ -1,32 +1,73 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html,
-body {
-    height: 100%;
-    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid red;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: lightgray;
+    background-color: lightcoral;
 }
 
+/* Navigation */
 nav {
     display: flex;
+    align-items: center;
     height: 64px;
     max-height: 64px;
     background-color: white;
 }
 
-nav > .main-menu {
-    list-style-type: none;
-    margin-left: -16px;
-}
-
-nav > .main-menu > li {}
-
+/* Image in navigation */
 nav > .logo-img {
     margin-left: 24px;
+}
+
+nav > h1 {
+    text-transform: uppercase;
+}
+
+nav > h1 > span {
+    color: gray;
+}
+
+/* ul in naivgation */
+nav > .main-menu {
+    list-style-type: none;
+    height: inherit;
+    margin-left: auto;
+    margin-right: 24px;
+    background-color: lightblue;
+}
+
+nav > .main-menu li {
+    display: inline-block;
+    height: inherit;
+    background-color: white;
+    margin-left: 16px;
+}
+
+nav .main-menu li > a {
+    display: table-cell;
+    height: inherit;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav .main-menu li:first-child {
+    margin-left: 0px;
+}
+
+main > .banner {
+    background-color: lightgray;
+    height: auto;
+    width: auto;
+    margin: 32px 0px 32px 24px;
+}
+
+main > .banner > img {
+    width: 60%;
+    height: 60%;
 }
